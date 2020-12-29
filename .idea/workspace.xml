@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="551473f9-02ca-4736-b4da-f1b12ea6e7e1" name="Default Changelist" comment="" />
+    <list default="true" id="551473f9-02ca-4736-b4da-f1b12ea6e7e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Testador de Contas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Conta/ContaCorrente.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Conta/ContaPoupanca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entidades/Diretor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entidades/Funcionario.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entidades/Gerente.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LIdadores/sistemaAuthenticacao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContaCorrente.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conta/Conta.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1mHf0jyLVnkMLUozDgpAafB7qt4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +47,15 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Entidades" />
+      <recent name="$PROJECT_DIR$/src/Conta" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -42,12 +67,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609155215693</updated>
-      <workItem from="1609155216819" duration="12229000" />
+      <workItem from="1609155216819" duration="14859000" />
+      <workItem from="1609174728390" duration="315000" />
+      <workItem from="1609238752637" duration="12526000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

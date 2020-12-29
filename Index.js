@@ -1,19 +1,22 @@
-import {Client} from "./src/Client.js";
-import {ContaCorrente} from "./src/ContaCorrente.js";
+import {Client} from "./src/Entidades/Client.js";
+import {Diretor} from "./src/Entidades/Diretor.js";
+import {Gerente} from "./src/Entidades/Gerente.js";
+import {sistemaAuthenticacao} from "./src/LIdadores/sistemaAuthenticacao.js";
 try{
-    const cliente1 = new Client('Luiz', 320102030);
-    const cliente2 = new Client('Isadora', 329102030);
 
-    const conta1 = new ContaCorrente(1002, cliente1);
+    const diretor = new Diretor('Roberto', 201313041290, 10000);
+    diretor.cadastrarSenha('asasas');
+    const gerente = new Gerente('Gorge', 132213045320, 5000);
+    gerente.cadastrarSenha('asofas');
+    const cliente = new Client('Luiz', 142314134, 'AAAA');
 
-    conta1.depositar(10);
-    console.log(conta1);
-
-    const conta2 = new ContaCorrente(1002, cliente2);
-
-    conta2.depositar(100);
-    conta2.transferir(50, conta1);
-    console.log(conta2);
+    /*
+        retorna verdadeiro se a string senha
+        bater com a contida, na classe
+    */
+    console.log(sistemaAuthenticacao.login(cliente, 'AAAA'));
+    console.log(sistemaAuthenticacao.login(diretor, 'asasas'));
+    console.log(sistemaAuthenticacao.login(gerente, 'asofas'));
 
     }
     catch (Erro){

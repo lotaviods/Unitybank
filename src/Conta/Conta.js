@@ -1,21 +1,22 @@
-import {Client} from "./Client.js";
-export class ContaCorrente {
-    // #saldo private property
-    // https://github.com/tc39/proposal-class-fields#private-fields
-    _saldo = 0;
-    agencia;
-    _cliente;
+import {Client} from "../Entidades/Client.js";
+export class Conta{
     static Ncontas = 0;
-    constructor(agencia, cliente) {
+    _agencia;
+    _saldo;
+    _cliente;
+    constructor(agencia, cliente,saldo) {
+        if (this.constructor == Conta)
+            // Mesmo efeito ao colocar a classe como abstract no PHP.
+            throw new Error('[DEV] Não é possivél instanciar um objeto do tipo Conta');
+
+        this.saldo = saldo;
         this.agencia = agencia;
         this.cliente = cliente;
-        ContaCorrente.Ncontas ++;
+        Conta.Ncontas ++;
     }
     sacar(valor) {
-        if (this._saldo <= valor){
-            throw new Error(`Valor a sacar é inválido`);
-        }
-        return (this._saldo -= valor);
+        // Mesmo efeito ao colocar o méthodo como abstract no PHP.
+        throw new Error('[DEV] Não podemos chamar um méthodo abstrato')
     }
 
     depositar(valor) {
@@ -33,6 +34,9 @@ export class ContaCorrente {
             throw new Error(`Não foi possível transferir : ${Erro.message}`);
         }
     }
+    set saldo(saldo){
+        this._saldo = saldo;
+    }
 
     get saldo(){
         return this._saldo;
@@ -48,5 +52,11 @@ export class ContaCorrente {
     get cliente(){
         return this._cliente;
     }
-}
+    set agencia(agencia){
+        this._agencia = agencia;
+    }
+    get agencia(){
+        return this._agencia;
+    }
 
+}
